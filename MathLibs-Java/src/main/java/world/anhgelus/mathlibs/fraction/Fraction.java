@@ -82,7 +82,7 @@ public class Fraction {
      * @return The result of the addition
      */
     public Fraction add(Fraction other) {
-        return StaticFraction.add(this, other);
+        return FractionUtils.add(this, other);
     }
 
     /**
@@ -91,7 +91,7 @@ public class Fraction {
      * @return The result of the subtraction
      */
     public Fraction sub(Fraction other) {
-        return StaticFraction.sub(this, other);
+        return FractionUtils.sub(this, other);
     }
 
     /**
@@ -100,7 +100,7 @@ public class Fraction {
      * @return The result of the multiplication
      */
     public Fraction mul(Fraction other) {
-        return StaticFraction.mul(this, other);
+        return FractionUtils.mul(this, other);
     }
 
     /**
@@ -109,6 +109,6 @@ public class Fraction {
      * @return The result of the division
      */
     public Fraction div(Fraction other) {
-        return StaticFraction.div(this, other);
+        return FractionUtils.div(this, other);
     }
 }

@@ -1,6 +1,6 @@
 package world.anhgelus.mathlibs.fraction;
 
-public class StaticFraction {
+public class FractionUtils {
     /**
      * Add fraction
      * @param a The first fraction
