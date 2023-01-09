@@ -44,8 +44,6 @@ public class StaticFraction {
      * @return The result of the division
      */
     public static Fraction div(Fraction a, Fraction b) {
-        final int newDenominator = a.denominator * b.numerator;
-        final int newNumerator = a.numerator * b.denominator;
-        return new Fraction(newNumerator, newDenominator).reduce();
+        return mul(a, b.invert());
     }
 }
