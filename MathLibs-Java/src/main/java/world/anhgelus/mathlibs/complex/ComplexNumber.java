@@ -40,4 +40,42 @@ public class ComplexNumber {
         }
         return real;
     }
+
+    /* OPERATIONS */
+
+    /**
+     * Add a complex number
+     * @param a complex number to add
+     * @return the result of the addition
+     */
+    public ComplexNumber add(ComplexNumber a) {
+        return ComplexNumberUtils.add(this, a);
+    }
+
+    /**
+     * Subtract a complex number
+     * @param a complex number to subtract
+     * @return the result of the subtraction
+     */
+    public ComplexNumber sub(ComplexNumber a) {
+        return ComplexNumberUtils.sub(this, a);
+    }
+
+    /**
+     * Multiply a complex number
+     * @param a complex number to multiply
+     * @return the result of the multiplication
+     */
+    public ComplexNumber mul(ComplexNumber a) {
+        return ComplexNumberUtils.mul(this, a);
+    }
+
+    /**
+     * Divide a complex number
+     * @param a complex number to divide
+     * @return the result of the division
+     */
+    public ComplexNumber div(ComplexNumber a) {
+        return ComplexNumberUtils.div(this, a);
+    }
 }
