@@ -37,7 +37,7 @@ You can also create
 > 
 > ColumnMatrice with `world.anhgelus.mathlibs.matrice.ColumnMatrice`
 > 
-> IdentityMatrice with `world.anhgelus.mathlibs.matrice.IdentityMatrice` (not implemented yet)
+> IdentityMatrice with `world.anhgelus.mathlibs.matrice.IdentityMatrice`
 
 If you want to use some basic operations, you can use the `world.anhgelus.mathlibs.matrice.MatriceUtils` class or
 the methods of your Matrice instance.

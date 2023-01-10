@@ -9,6 +9,10 @@ public class SquareMatrice extends Matrice {
         this.order = order;
     }
 
+    public IdentityMatrice getIdentityMatrice() {
+        return new IdentityMatrice(lines);
+    }
+
     public Matrice toGeneralMatrice() {
         return new Matrice(order, order);
     }

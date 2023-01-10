@@ -1,6 +1,7 @@
 package world.anhgelus.mathlibs.matrice;
 
 import world.anhgelus.mathlibs.matrice.specials.ColumnMatrice;
+import world.anhgelus.mathlibs.matrice.specials.IdentityMatrice;
 import world.anhgelus.mathlibs.matrice.specials.SquareMatrice;
 
 public class Matrice {
