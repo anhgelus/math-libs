@@ -25,22 +25,22 @@ look at the javadoc.
 If you want to use some basic operations, you can use the `world.anhgelus.mathlibs.complex.ComplexNumberUtils` class or 
 the methods of your ComplexNumber instance.
 
-### Matrice
+### Matrix
 
-If you want to create a matrice, just create a new instance of `world.anhgelus.mathlibs.matrice.Matrice` and look at the
+If you want to create a matrix, just create a new instance of `world.anhgelus.mathlibs.matrix.Matrix` and look at the
 javadoc.
 
 You can also create 
-> SquareMatrice with `world.anhgelus.mathlibs.matrice.SquareMatrice`
+> SquareMatrix with `world.anhgelus.mathlibs.matrix.SquareMatrix`
 > 
-> LineMatrice with `world.anhgelus.mathlibs.matrice.LineMatrice`
+> LineMatrix with `world.anhgelus.mathlibs.matrix.LineMatrix`
 > 
-> ColumnMatrice with `world.anhgelus.mathlibs.matrice.ColumnMatrice`
+> ColumnMatrix with `world.anhgelus.mathlibs.matrix.ColumnMatrix`
 > 
-> IdentityMatrice with `world.anhgelus.mathlibs.matrice.IdentityMatrice`
+> IdentityMatrix with `world.anhgelus.mathlibs.matrix.IdentityMatrix`
 
-If you want to use some basic operations, you can use the `world.anhgelus.mathlibs.matrice.MatriceUtils` class or
-the methods of your Matrice instance.
+If you want to use some basic operations, you can use the `world.anhgelus.mathlibs.matrix.MatrixUtils` class or
+the methods of your Matrix instance.
 
 ### Utils
 

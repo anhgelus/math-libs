@@ -1,18 +1,18 @@
-package world.anhgelus.mathlibs.matrice;
+package world.anhgelus.mathlibs.matrix;
 
-public class MatriceUtils {
+public class MatrixUtils {
     /**
      * Addition two matrices
-     * @param a matrice to add
-     * @param b matrice to add
+     * @param a matrix to add
+     * @param b matrix to add
      * @return the result of the addition
-     * @throws MatriceException if the matrices are not the same size
+     * @throws MatrixException if the matrices are not the same size
      */
-    public static Matrice add(Matrice a, Matrice b) throws MatriceException {
+    public static Matrix add(Matrix a, Matrix b) throws MatrixException {
         if (a.lines != b.lines || a.columns != b.columns) {
-            throw new MatriceException("Matrices must have the same dimensions");
+            throw new MatrixException("Matrices must have the same dimensions");
         }
-        var result = new Matrice(a.columns, a.lines);
+        var result = new Matrix(a.columns, a.lines);
         for (int i = 0; i < (a.lines * a.columns); i++) {
             final int columnsA = i % a.columns, columnsB = i % b.columns; // Get the column of the current index
             final int linesA = (i - columnsA) / a.columns, linesB = (i - columnsB) / a.columns; // Get the line of the current index
@@ -23,16 +23,16 @@ public class MatriceUtils {
 
     /**
      * Subtract two matrices
-     * @param a matrice to subtract
-     * @param b matrice to subtract
+     * @param a matrix to subtract
+     * @param b matrix to subtract
      * @return the result of the subtraction
-     * @throws MatriceException if the matrices are not the same size
+     * @throws MatrixException if the matrices are not the same size
      */
-    public static Matrice sub(Matrice a, Matrice b) throws MatriceException {
+    public static Matrix sub(Matrix a, Matrix b) throws MatrixException {
         if (a.lines != b.lines || a.columns != b.columns) {
-            throw new MatriceException("Matrices must have the same dimensions");
+            throw new MatrixException("Matrices must have the same dimensions");
         }
-        var result = new Matrice(a.columns, a.lines);
+        var result = new Matrix(a.columns, a.lines);
         for (int i = 0; i < (a.lines * a.columns); i++) {
             final int columnsA = i % a.columns, columnsB = i % b.columns; // Get the column of the current index
             final int linesA = (i - columnsA) / a.columns, linesB = (i - columnsB) / a.columns; // Get the line of the current index
@@ -43,16 +43,16 @@ public class MatriceUtils {
 
     /**
      * Multiply two matrices
-     * @param a matrice to multiply
-     * @param b matrice to multiply
+     * @param a matrix to multiply
+     * @param b matrix to multiply
      * @return the result of the multiplication
-     * @throws MatriceException if the matrices can't be multiplied
+     * @throws MatrixException if the matrices can't be multiplied
      */
-    public static Matrice mul(Matrice a, Matrice b) throws MatriceException {
+    public static Matrix mul(Matrix a, Matrix b) throws MatrixException {
         if (a.columns != b.lines) {
-            throw new MatriceException("Cannot multiply this two matrices");
+            throw new MatrixException("Cannot multiply this two matrices");
         }
-        var result = new Matrice(b.columns, a.lines);
+        var result = new Matrix(b.columns, a.lines);
         for (int i = 0; i < (a.lines * b.columns); i++) {
             final int columnsA = i % a.columns, columnsB = i % b.columns; // Get the column of the current index
             final int linesA = (i - columnsA) / a.columns, linesB = (i - columnsB) / b.columns; // Get the line of the current index
